@@ -13,6 +13,7 @@ resource "local_file" "example_html_body" {
 }
 
 resource "local_file" "other"{
+    depends_on = [ local_file.main ]
     content = local_file.main.content
     filename = "${path.module}/other.txt"
 }
