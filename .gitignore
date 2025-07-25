@@ -7,3 +7,5 @@
 */terraform.tfstate*
 *.txt
 *.html
+*.terraform.tfstate.lock.info
+*.pem
